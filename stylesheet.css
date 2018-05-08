@@ -1,0 +1,120 @@
+*{
+    font-family: 'bahnschrift';
+}
+
+head{
+    display: none;
+}
+
+body{
+    background: #222;
+    user-select: none;
+    overflow: hidden;
+    display: block;
+}
+div{
+    display: block;
+    user-select: none;
+    overflow: hidden;
+    
+}
+
+#counter{
+    background-color: #000;
+    color: limegreen;
+    display: block;
+    height: 60px;
+    width: 720px;
+    margin: 0 auto;
+    font-size: 50px;
+    text-align: right
+}
+
+#res_amount{
+    margin-right: 10px;
+    background-color: #000
+}
+
+#clicker_container{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    top: 50px;
+    display: block;
+    position: relative;
+    background-color: #333;
+    border-radius: 25px;
+    
+}
+
+#clicker{
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-width: 5px;
+    background-color: darkred;
+    border-color: crimson;
+    cursor: pointer;
+    transition: transform .05s;
+    transition-property: transform;
+    transition-duration: 0.05s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
+
+#clicker:focus {
+    outline:0;
+}
+
+#clicker:hover {
+    transform: scale(1.05);
+}
+
+#upgrade_container{
+    float: right;
+    width: 275px;
+    height: 250px;
+    top: 25px;
+    right: 10%;
+    padding: 20px;
+    position: relative;
+    background-color: #333;
+    border-radius: 25px;
+    
+}
+
+#worker_container{
+    height: 100px;
+}
+
+#buy_worker{
+    width: 150px;
+    height: 40px;
+    float: left;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: #333;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+}
+
+#buy_worker:focus {outline:0;}
+
+#worker_values {
+    border-color: #fff;
+    color: #bbb;   
+}
+
+#worker_value_cost {
+    margin: 1px;
+    float: left;
+}
+#worker_value_amount {
+    margin: 1px;
+    float: left;
+}
