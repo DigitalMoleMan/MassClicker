@@ -2,44 +2,40 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
         <link rel="stylesheet" href="stylesheet.css">
         <title>Mass</title>
     </head>
     
     <body>
         <div id="game">
-            <div id="counter">
-                <span id="res_amount">0</span>
-            </div>
-            </div>
-            
-            <div id="upgrade_container"> 
-                <div id="worker_container">
-                    <button id="buy_worker" onclick="buyWorker()">Buy Worker</button>
-
-                    <div id="worker_values">
-
-                        <div id="worker_value_cost">
-
-                            <span id="workers_c">Cost: 10 RES</span>
-                        </div>
-
-                        <div id="worker_value_amount">
-                            <span id="workers_a">Have: 0</span>
-                        </div>
-
+                <div id="counter">
+                    <span id="res_amount">0</span>
                 </div>
 
+            <div id="panels">
+
+                <div id="clicker_container">
+                    <button id="clicker" onclick="addRes()"></button>
                 </div>
+
+                <div id="upgrade_container" class="upgrade_container">
+                    <div id="shop_header">
+                        <h2 id="shop_header_text">Shop</h2>
+                    </div>
+                    <div id="worker">
+                        <div class="itemName">
+                            <span id="worker_name" class="item">Worker</span>
+                            <span id="worker_price" class="itemPrice">$ 10</span>
+                        </div>
+                            <button id="buy_worker" class="shopButton" onmouseover="workerInfo()" onclick="buyWorker()">+</button>
+                        <div id="worker_amount_container">
+                            <span id="worker_amount" class="itemAmount">0</span>
+                        </div>
+                
+
+                
             </div>
-
-            <div id="clicker_container">
-                <button id="clicker" onclick="addRes()"></button>
-            </div>
-
-            
-
-           
         </div>
         <script src="mass.js"></script>
     </body>

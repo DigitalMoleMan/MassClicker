@@ -2,14 +2,12 @@
 Mass Clicker - script
 */
 var resAmount = 0;
+var cps = 0;
 
+var shopOpen = false;
 /*Worker Units*/
 var workerAmount = 0;
 var workerBuyCost = 10;
-
-var workerUpgrades = 0;
-var workerUpgradeCost = 3;
-
 
 function addRes() {
     resAmount += 1;
@@ -26,7 +24,7 @@ function buyWorker() {
 var tickSpeed = setInterval(gameTick, 1000);
 
 function gameTick() {
-    resAmount += (workerAmount * (workerUpgrades + 1));
+    resAmount += workerAmount;
 }
 
 function upgradeWorker() {
@@ -35,12 +33,12 @@ function upgradeWorker() {
     }
 }
 
-var updateSpeed = setInterval(updateValues, 1);
+var updateSpeed = setInterval(updateValues, 10);
 
 function updateValues(){
-    document.getElementById("res_amount").innerHTML = resAmount + " RES";
-    document.getElementById("workers_c").innerHTML = "Cost: " + workerBuyCost + " RES";
-    document.getElementById("workers_a").innerHTML = "Have: " + workerAmount;
+    document.getElementById("res_amount").innerHTML ="$ " + resAmount;
+    document.getElementById("worker_price").innerHTML ="$ " + workerBuyCost;
+    document.getElementById("worker_amount").innerHTML = workerAmount;
 }
 
 function dev() {
