@@ -1,27 +1,18 @@
 *{
     font-family: 'bahnschrift';
-    webkit-user-select: none;
 }
 
 *:focus {
     outline:0;
 }
 
-head {
-    display: none;
-}
-
 body {
     background: #222;
-    user-select: none;
-    overflow: hidden;
-    display: block;
 }
+
 div {
-    display: block;
     user-select: none;
     overflow: hidden;
-    
 }
 
 
@@ -30,6 +21,7 @@ div {
     color: limegreen;
     margin: 0 auto;
     width: 90%;
+    max-width: 768px;
     height: 60px;
     top: 10px;
     left: 10px;
@@ -40,7 +32,6 @@ div {
 
 #res_amount {
     margin-left: 10px;
-    background-color: #000
 }
 
 #panels {
