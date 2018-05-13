@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="stylesheet.css">
         <title>Mass</title>
     </head>
-    
     <body>
+        
         <div id="game">
-                <div id="counter">
-                    <span id="res_amount">0</span>
-                </div>
+
+            <div id="counter">
+                <span id="res_amount">0</span>
+            </div>
 
             <div id="panels">
 
@@ -28,15 +29,29 @@
                             <span id="worker_name" class="item">Worker</span>
                             <span id="worker_price" class="itemPrice">$ 10</span>
                         </div>
-                            <button id="buy_worker" class="shopButton" onmouseover="workerInfo()" onclick="buyWorker()">+</button>
-                        <div id="worker_amount_container">
+                        <button id="buy_worker" class="shopButton" onclick="buyWorker()">+</button>
+                        <div id="worker_amount_container" class="itemAmountContainer">
                             <span id="worker_amount" class="itemAmount">0</span>
                         </div>
-                
+                    </div>
+                    
+                    <div id="clickerUpgrade">
 
-                
+                        <div class="itemName">
+                            <span id="clickerUpgrade_name" class="item">Banker</span>
+                            <span id="clicker_upgrade_price" class="itemPrice">$ 1000</span>
+                        </div>
+
+                        <button id="buy_clicker_upgrade" class="shopButton" onclick="buyClickerUpgrade()">+</button>
+                        <div id="clicker_upgrade_amount_container" class="itemAmountContainer">
+                            <span id="clicker_upgrade_amount" class="itemAmount">0</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
+
         <script src="mass.js"></script>
     </body>
 </html>
